@@ -1,0 +1,28 @@
+.item{
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    color: black;
+    font-weight: 1000;
+   
+}
+.one{
+    background-color: blueviolet;
+}
+.two{
+    background-color: aqua;
+}
+.three{
+    background-color: green;
+}
+.four{
+    background-color: red;
+}
+.five{
+    background-color:yellow
+}
+.six{
+    background-color:brown
+}
