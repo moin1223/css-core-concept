@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="grid.css">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 600px;
+            display: grid;
+            grid-template-columns: repeat(12,1fr);
+            grid-template-rows: 50px auto 50px;
+          grid-template-areas: ". h h h h h h h h h h ."
+          "m m c c c c c c c c c c" " f f f f f f f f f f f f";
+
+         grid-gap: 20px;
+        }
+        .header{
+           grid-area: h;
+        }
+        .footer{
+          grid-area: f;
+        }
+        .content{
+            grid-area: c;
+        }
+        .menu{
+            grid-area: m;
+        }
+
+      
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header one">HEADER</div>
+        <div class="menu two">MENU</div>
+        <div class="content three">CONTENT</div>
+        <div class="footer four">FOOTER</div>
+      
+    </div>
+</body>
+</html>

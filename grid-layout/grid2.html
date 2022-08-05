@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="grid.css">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 600px;
+            display: grid;
+            grid-template-columns: repeat(12,1fr);
+            grid-template-rows: 50px auto 50px;
+
+
+            /* height: 600px;  
+         */
+           
+        }
+        .header{
+            grid-column: 2/-1;
+        }
+        .footer{
+            grid-column: 1/-1;
+        }
+        .content{
+            grid-column: 2/-1;
+        }
+        .menu{
+            grid-row: 1/3;
+        }
+
+      
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header one">HEADER</div>
+        <div class="menu two">MENU</div>
+        <div class="content three">CONTENT</div>
+        <div class="footer four">FOOTER</div>
+      
+    </div>
+</body>
+</html>
