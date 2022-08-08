@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+            
+              
+            .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: .2fr 1.5fr 1.5fr .3fr;
+    height: 100vh;
+    grid-template-areas: "nav nav nav nav"
+    "sidebar main main main"
+    "sidebar left right right"
+    "sidebar footer footer footer"
+    ;
+    font-family: sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+nav{
+    grid-area: nav;
+    background: red;
+}
+main{
+    grid-area: main;
+    background: rosybrown;
+}
+#sidebar{
+    grid-area: sidebar;
+    background: royalblue;
+}
+#left{
+    grid-area: left;
+    background: skyblue;
+}
+#right{
+    grid-area: right;
+    background: yellow;
+}
+footer{
+    grid-area: footer;
+    background: yellowgreen;
+}
+/* @media only screen and (max-width:688px) {
+.container{
+    display:grid;
+    grid-template-columns:1fr;
+    grid-template-rows: .4fr 2fr 1.5fr 1.5fr 1fr .6fr;
+    grid-template-areas: "nav"
+    "sidebar"
+    "main"
+    "left"
+    "right"
+    "footer";
+}
+    
+    
+} */
+        </style>
+        
+    </head>
+    <body>
+       <div class="container">
+        <nav>Navbar</nav>
+        <main>Main</main>
+        <div id="sidebar">sidebar</div>
+       <div id="left">Left</div>
+       <div id="right">Right</div>
+       <footer>Footer</footer>
+       </div>
+    </body>
+</html>
